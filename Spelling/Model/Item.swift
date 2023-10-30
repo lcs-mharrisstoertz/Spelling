@@ -7,6 +7,17 @@
 
 import Foundation
 
+//this stores what happens in a single round of the game
+struct Result: Identifiable {
+    let id = UUID()
+    //Item the user was randomly shown
+    let item: Item
+    //what the user guessed
+    let guessProvided: String
+    //was the user correct or not
+    let outcome: Outcome
+}
+
 struct Item: Identifiable {
     
     let id = UUID()
